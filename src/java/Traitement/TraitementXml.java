@@ -81,11 +81,13 @@ public class TraitementXml {
                         }
                         for (int i = 0; i < carrMot.size() - LastDiaclitise; i++) {
                             Stem = Stem.concat(carrMot.get(i) + "");
-                            System.out.println(carrMot.get(i) +"|" );
+                            System.out.println(carrMot.get(i) + "|");
                         }
 
                     } else {
+                        String StemNDiac = "";
                         for (int itrTok = 0; itrTok < nodeListTokFor.getLength(); itrTok++) {
+
                             Node nodeTok = nodeListTokFor.item(itrTok);
                             Element eElementTokK = (Element) nodeTok;
                             String Formm = eElementTokK.getAttribute("form0");
@@ -104,12 +106,35 @@ public class TraitementXml {
                             } else if (carr.get(carr.size() - 1).equals("+")) {
                                 MotDiaclitiseTrait = RemoveProclitique(Formm, MotDiaclitiseTrait, diaclitise);
 //                                System.out.println("Steem == " + MotDiaclitiseTrait);
+                            } else {
+                                StemNDiac = Formm;
                             }
                         }
                         Stem = MotDiaclitiseTrait;
+                        char[] stemDiac = MotDiaclitiseTrait.toCharArray();
+                        char[] stemNDiac = StemNDiac.toCharArray();
+                        String test = "";
 
+                        List<String> StemNoDia = ConvertToList(stemNDiac);
+
+                        List<String> StemDia = ConvertToList(stemDiac);
+                        List<String> StemDiaF = ConvertToList(stemDiac);
+                        StemDia.removeAll(diaclitise);
+                        for (String s : StemDiaF) {
+                            if (diaclitise.contains(s)) {
+                                test += s;
+                            } else {
+                                test += StemNoDia.get(0);
+                                StemNoDia.remove(0);
+                            }
+                        }
+                        if (!StemNoDia.isEmpty()) {
+
+                            test += StemNoDia.get(0);
+                            StemNoDia.remove(0);
+                        }
+                        Stem = test;
                     }
-
                     System.out.println("Steem == " + Stem);
 //                    for (int i = 0; i < caracterDiac.length; i++) {
 //                        System.out.println(caracterDiac[i]);
@@ -153,7 +178,7 @@ public class TraitementXml {
             Mot = Res;
         }
         String Res = "";
-        int LastDiaclitise = 0,DepuSDiaclitise = 0;
+        int LastDiaclitise = 0, DepuSDiaclitise = 0;
         if (diaclitise.contains(carrMot.get(0))) {
             DepuSDiaclitise++;
         }
