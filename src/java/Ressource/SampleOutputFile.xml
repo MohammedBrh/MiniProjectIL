@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><madamira_output xmlns="urn:edu.columbia.ccls.madamira.configuration:0.1">
+    <out_doc id="ExampleDocument">
+        <out_seg id="SENT1">
+            <segment_info>
+                <preprocessed>علق الكونغرس الأميركي بمجلسيه النواب والشيوخ جلسة التصديق المشتركة على فوز جو بايدن عقب اقتحام أنصار الرئيس المنتهية ولايته دونالد ترامب مبنى الكونغرس , بعد أن دعاهم للتوجه للمبنى لمنع ما وصفوها بسرقة الانتخابات , فيما رفضت وزارة الدفاع ( البنتاغون ) نشر الحرس الوطني</preprocessed>
+                <bpc>
+                    <chunk id="0" type="VP">
+                        <tok id="0" form0="علق"/>
+                    </chunk>
+                    <chunk id="1" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="كونغرس"/>
+                        <tok id="2" form0="ال+"/>
+                        <tok id="3" form0="اميركي"/>
+                    </chunk>
+                    <chunk id="2" type="PP">
+                        <tok id="0" form0="ب+"/>
+                    </chunk>
+                    <chunk id="3" type="NP">
+                        <tok id="0" form0="مجلسي"/>
+                    </chunk>
+                    <chunk id="4" type="NP">
+                        <tok id="0" form0="+ه"/>
+                    </chunk>
+                    <chunk id="5" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="نواب"/>
+                        <tok id="2" form0="و+"/>
+                        <tok id="3" form0="ال+"/>
+                        <tok id="4" form0="شيوخ"/>
+                    </chunk>
+                    <chunk id="6" type="NP">
+                        <tok id="0" form0="جلسة"/>
+                    </chunk>
+                    <chunk id="7" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="تصديق"/>
+                        <tok id="2" form0="ال+"/>
+                        <tok id="3" form0="مشتركة"/>
+                    </chunk>
+                    <chunk id="8" type="PP">
+                        <tok id="0" form0="علي"/>
+                    </chunk>
+                    <chunk id="9" type="NP">
+                        <tok id="0" form0="فوز"/>
+                    </chunk>
+                    <chunk id="10" type="NP">
+                        <tok id="0" form0="جو"/>
+                    </chunk>
+                    <chunk id="11" type="NP">
+                        <tok id="0" form0="بايدن"/>
+                    </chunk>
+                    <chunk id="12" type="NP">
+                        <tok id="0" form0="عقب"/>
+                    </chunk>
+                    <chunk id="13" type="NP">
+                        <tok id="0" form0="اقتحام"/>
+                    </chunk>
+                    <chunk id="14" type="NP">
+                        <tok id="0" form0="انصار"/>
+                    </chunk>
+                    <chunk id="15" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="رئيس"/>
+                        <tok id="2" form0="ال+"/>
+                        <tok id="3" form0="منتهية"/>
+                    </chunk>
+                    <chunk id="16" type="NP">
+                        <tok id="0" form0="ولاية"/>
+                    </chunk>
+                    <chunk id="17" type="NP">
+                        <tok id="0" form0="+ه"/>
+                    </chunk>
+                    <chunk id="18" type="NP">
+                        <tok id="0" form0="دونالد"/>
+                    </chunk>
+                    <chunk id="19" type="NP">
+                        <tok id="0" form0="ترامب"/>
+                    </chunk>
+                    <chunk id="20" type="NP">
+                        <tok id="0" form0="مبني"/>
+                    </chunk>
+                    <chunk id="21" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="كونغرس"/>
+                    </chunk>
+                    <chunk id="22" type="">
+                        <tok id="0" form0=","/>
+                    </chunk>
+                    <chunk id="23" type="NP">
+                        <tok id="0" form0="بعد"/>
+                    </chunk>
+                    <chunk id="24" type="SBAR">
+                        <tok id="0" form0="ان"/>
+                    </chunk>
+                    <chunk id="25" type="VP">
+                        <tok id="0" form0="دعا"/>
+                    </chunk>
+                    <chunk id="26" type="NP">
+                        <tok id="0" form0="+هم"/>
+                    </chunk>
+                    <chunk id="27" type="PP">
+                        <tok id="0" form0="ل+"/>
+                    </chunk>
+                    <chunk id="28" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="توجه"/>
+                    </chunk>
+                    <chunk id="29" type="PP">
+                        <tok id="0" form0="ل+"/>
+                    </chunk>
+                    <chunk id="30" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="مبني"/>
+                    </chunk>
+                    <chunk id="31" type="PP">
+                        <tok id="0" form0="ل+"/>
+                    </chunk>
+                    <chunk id="32" type="NP">
+                        <tok id="0" form0="منع"/>
+                    </chunk>
+                    <chunk id="33" type="WHNP">
+                        <tok id="0" form0="ما"/>
+                    </chunk>
+                    <chunk id="34" type="VP">
+                        <tok id="0" form0="وصفوا"/>
+                    </chunk>
+                    <chunk id="35" type="NP">
+                        <tok id="0" form0="+ها"/>
+                    </chunk>
+                    <chunk id="36" type="PP">
+                        <tok id="0" form0="ب+"/>
+                    </chunk>
+                    <chunk id="37" type="NP">
+                        <tok id="0" form0="سرقة"/>
+                    </chunk>
+                    <chunk id="38" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="انتخابات"/>
+                    </chunk>
+                    <chunk id="39" type="">
+                        <tok id="0" form0=","/>
+                    </chunk>
+                    <chunk id="40" type="SBAR">
+                        <tok id="0" form0="فيما"/>
+                    </chunk>
+                    <chunk id="41" type="VP">
+                        <tok id="0" form0="رفضت"/>
+                    </chunk>
+                    <chunk id="42" type="NP">
+                        <tok id="0" form0="وزارة"/>
+                    </chunk>
+                    <chunk id="43" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="دفاع"/>
+                    </chunk>
+                    <chunk id="44" type="">
+                        <tok id="0" form0="-LRB-"/>
+                    </chunk>
+                    <chunk id="45" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="بنتاغون"/>
+                    </chunk>
+                    <chunk id="46" type="">
+                        <tok id="0" form0="-RRB-"/>
+                    </chunk>
+                    <chunk id="47" type="NP">
+                        <tok id="0" form0="نشر"/>
+                    </chunk>
+                    <chunk id="48" type="NP">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="حرس"/>
+                        <tok id="2" form0="ال+"/>
+                        <tok id="3" form0="وطني"/>
+                    </chunk>
+                </bpc>
+                <ner/>
+            </segment_info>
+            <word_info>
+                <word id="0" word="علق">
+                    <svm_prediction>
+                        <morph_feature_set diac="عَلَّقَ" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="m" num="s" stt="na" cas="na" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8955176478607276">
+                        <morph_feature_set diac="عَلَّقَ" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="m" num="s" stt="na" cas="na" enc0="0" stem="عَلَّق"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="علق"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Elq" form1="PV+PVSUFF_SUBJ:3MS"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="علق" form1="علق" form2="عَلَّق" form3="VRB" form4="VBD" form5="PV+PVSUFF_SUBJ:3MS"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="علق"/>
+                    </tokenized>
+                </word>
+                <word id="1" word="الكونغرس">
+                    <svm_prediction>
+                        <morph_feature_set diac="الكُونْغرِس" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac="الكُونْغرِس" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0" stem="كُونْغرِس"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الكونغرس"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="kwngrs" form1="NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الكونغرس" form1="الكونغرس" form2="كُونْجرِس" form3="PROP" form4="DT+NNP" form5="DET+NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="كونغرس"/>
+                    </tokenized>
+                </word>
+                <word id="2" word="الأميركي">
+                    <svm_prediction>
+                        <morph_feature_set diac="الأَمِيرْكِيِّ" pos="adj" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8957755326635665">
+                        <morph_feature_set diac="الأَمِيرْكِيِّ" pos="adj" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="أَمِيرْكِيّ"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الاميركي"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="Amyrky" form1="ADJ+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الأميركي" form1="الاميركي" form2="أَمْرِيكِيّ" form3="NOM" form4="DT+JJ" form5="DET+ADJ+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="اميركي"/>
+                    </tokenized>
+                </word>
+                <word id="3" word="بمجلسيه">
+                    <svm_prediction>
+                        <morph_feature_set diac="بِمَجْلِسَيْهِ" pos="noun" prc3="0" prc2="0" prc1="bi_prep" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="d" stt="c" cas="g" enc0="3ms_poss"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8939012179169564">
+                        <morph_feature_set diac="بِمَجْلِسَيْهِ" pos="noun" prc3="0" prc2="0" prc1="bi_prep" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="d" stt="c" cas="g" enc0="3ms_poss" stem="مَجْلِس"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ب+"/>
+                        <tok id="1" form0="مجلسي"/>
+                        <tok id="2" form0="+ه"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="b+" form1="PREP+"/>
+                        <tok id="1" form0="mjlsy" form1="NOUN+NSUFF_MASC_DU_ACC"/>
+                        <tok id="2" form0="+h" form1="+POSS_PRON_3MS"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ب+" form1="ب+" form2="بِ+" form3="PRT+" form4="IN+" form5="PREP+"/>
+                        <tok id="1" form0="مجلسي" form1="مجلسي" form2="مَجْلِس" form3="NOM" form4="NNS" form5="NOUN+NSUFF_MASC_DU_ACC"/>
+                        <tok id="2" form0="+ه" form1="+ه" form2="+هُ" form3="+NOM" form4="+PRP$" form5="+POSS_PRON_3MS"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ب+"/>
+                        <tok id="1" form0="مجلسي"/>
+                        <tok id="2" form0="+ه"/>
+                    </tokenized>
+                </word>
+                <word id="4" word="النواب">
+                    <svm_prediction>
+                        <morph_feature_set diac="النُّوّابِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8992167844888498">
+                        <morph_feature_set diac="النُّوّابِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="نُوّاب"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="النواب"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="nwAb" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="النواب" form1="النواب" form2="نائِب" form3="NOM" form4="DT+NN" form5="DET+NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="نواب"/>
+                    </tokenized>
+                </word>
+                <word id="5" word="والشيوخ">
+                    <svm_prediction>
+                        <morph_feature_set diac="وَالشُّيُوخِ" pos="noun" prc3="0" prc2="wa_conj" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8943362057940295">
+                        <morph_feature_set diac="وَالشُّيُوخِ" pos="noun" prc3="0" prc2="wa_conj" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="شُيُوخ"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="و+"/>
+                        <tok id="1" form0="الشيوخ"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="w+" form1="CONJ+"/>
+                        <tok id="1" form0="Al+" form1="DET+"/>
+                        <tok id="2" form0="$ywx" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="و+" form1="و+" form2="وَ+" form3="PRT+" form4="CC+" form5="CONJ+"/>
+                        <tok id="1" form0="الشيوخ" form1="الشيوخ" form2="شَيْخ" form3="NOM" form4="DT+NN" form5="DET+NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="و+"/>
+                        <tok id="1" form0="ال+"/>
+                        <tok id="2" form0="شيوخ"/>
+                    </tokenized>
+                </word>
+                <word id="6" word="جلسة">
+                    <svm_prediction>
+                        <morph_feature_set diac="جَلْسَةٍ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8849539284493109">
+                        <morph_feature_set diac="جَلْسَةِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="g" enc0="0" stem="جَلْس"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="جلسة"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="jlsp" form1="NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="جلسة" form1="جلسة" form2="جَلْسَة" form3="NOM" form4="NN" form5="NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="جلسة"/>
+                    </tokenized>
+                </word>
+                <word id="7" word="التصديق">
+                    <svm_prediction>
+                        <morph_feature_set diac="التَّصْدِيقَ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8889183115798678">
+                        <morph_feature_set diac="التَّصْدِيقِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="تَصْدِيق"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="التصديق"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="tSdyq" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="التصديق" form1="التصديق" form2="تَصْدِيق" form3="NOM" form4="DT+NN" form5="DET+NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="تصديق"/>
+                    </tokenized>
+                </word>
+                <word id="8" word="المشتركة">
+                    <svm_prediction>
+                        <morph_feature_set diac="المُشْتَرَكَةِ" pos="adj" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8803816727388905">
+                        <morph_feature_set diac="المُشْتَرَكَةِ" pos="adj" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="d" cas="g" enc0="0" stem="مُشْتَرَك"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="المشتركة"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="m$trkp" form1="ADJ+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="المشتركة" form1="المشتركة" form2="مُشْتَرَك" form3="NOM" form4="DT+JJ" form5="DET+ADJ+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="مشتركة"/>
+                    </tokenized>
+                </word>
+                <word id="9" word="على">
+                    <svm_prediction>
+                        <morph_feature_set diac="عَلَى" pos="prep" prc3="0" prc2="0" prc1="0" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.9028887140500753">
+                        <morph_feature_set diac="عَلَى" pos="prep" prc3="0" prc2="0" prc1="0" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="0" stem="عَلَى"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="علي"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Ely" form1="PREP"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="على" form1="علي" form2="عَلَى" form3="PRT" form4="IN" form5="PREP"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="علي"/>
+                    </tokenized>
+                </word>
+                <word id="10" word="فوز">
+                    <svm_prediction>
+                        <morph_feature_set diac="فَوْزِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8976950388630852">
+                        <morph_feature_set diac="فَوْزِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0" stem="فَوْز"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="فوز"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="fwz" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="فوز" form1="فوز" form2="فَوْز" form3="NOM" form4="NN" form5="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="فوز"/>
+                    </tokenized>
+                </word>
+                <word id="11" word="جو">
+                    <svm_prediction>
+                        <morph_feature_set diac="جُو" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.885277866901877">
+                        <morph_feature_set diac="جَوٍّ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="g" enc0="0" stem="جَوّ"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="جو"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="jw" form1="NOUN+CASE_INDEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="جو" form1="جو" form2="جَوّ" form3="NOM" form4="NN" form5="NOUN+CASE_INDEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="جو"/>
+                    </tokenized>
+                </word>
+                <word id="12" word="بايدن">
+                    <svm_prediction>
+                        <morph_feature_set diac="بايدن" pos="adj" prc3="0" prc2="0" prc1="bi_prep" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="g" enc0="3d_poss"/>
+                    </svm_prediction>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="بايدن"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="bAydn" form1="NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="بايدن" form1="بايدن" form2="بايدن" form3="NOM" form4="NN" form5="NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="بايدن"/>
+                    </tokenized>
+                </word>
+                <word id="13" word="عقب">
+                    <svm_prediction>
+                        <morph_feature_set diac="عَقِبَ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="a" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8866756788017508">
+                        <morph_feature_set diac="عُقْبَ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="a" enc0="0" stem="عُقْب"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="عقب"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Eqb" form1="NOUN+CASE_DEF_ACC"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="عقب" form1="عقب" form2="عُقْب" form3="NOM" form4="NN" form5="NOUN+CASE_DEF_ACC"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="عقب"/>
+                    </tokenized>
+                </word>
+                <word id="14" word="اقتحام">
+                    <svm_prediction>
+                        <morph_feature_set diac="اِقْتِحامِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8976950388630852">
+                        <morph_feature_set diac="اِقْتِحامِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0" stem="ٱِقْتِحام"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="اقتحام"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="AqtHAm" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="اقتحام" form1="اقتحام" form2="ٱِقْتِحام" form3="NOM" form4="NN" form5="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="اقتحام"/>
+                    </tokenized>
+                </word>
+                <word id="15" word="أنصار">
+                    <svm_prediction>
+                        <morph_feature_set diac="أَنْصارِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8976950388630852">
+                        <morph_feature_set diac="أَنْصارِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0" stem="أَنْصار"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="انصار"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="AnSAr" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="أنصار" form1="انصار" form2="أَنْصار" form3="NOM" form4="NN" form5="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="انصار"/>
+                    </tokenized>
+                </word>
+                <word id="16" word="الرئيس">
+                    <svm_prediction>
+                        <morph_feature_set diac="الرَّئِيسِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8992167844888498">
+                        <morph_feature_set diac="الرَّئِيسِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="رَئِيس"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الرئيس"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="r}ys" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الرئيس" form1="الرئيس" form2="رَئِيس" form3="NOM" form4="DT+NN" form5="DET+NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="رئيس"/>
+                    </tokenized>
+                </word>
+                <word id="17" word="المنتهية">
+                    <svm_prediction>
+                        <morph_feature_set diac="المُنْتَهِيَةُ" pos="adj" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8162361921094649">
+                        <morph_feature_set diac="المُنْتَهِيَةِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="d" cas="g" enc0="0" stem="مُنْتَهِي"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="المنتهية"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="mnthyp" form1="NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="المنتهية" form1="المنتهية" form2="مُنْتَهِي" form3="NOM" form4="DT+NN" form5="DET+NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="منتهية"/>
+                    </tokenized>
+                </word>
+                <word id="18" word="ولايته">
+                    <svm_prediction>
+                        <morph_feature_set diac="وِلايَتُهُ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="g" enc0="3ms_poss"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8837180873962148">
+                        <morph_feature_set diac="وِلايَتِهِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="g" enc0="3ms_poss" stem="وِلاي"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ولاية"/>
+                        <tok id="1" form0="+ه"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="wlAyp" form1="NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                        <tok id="1" form0="+h" form1="+POSS_PRON_3MS"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ولاية" form1="ولاية" form2="وِلايَة" form3="NOM" form4="NN" form5="NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                        <tok id="1" form0="+ه" form1="+ه" form2="+هُ" form3="+NOM" form4="+PRP$" form5="+POSS_PRON_3MS"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ولاية"/>
+                        <tok id="1" form0="+ه"/>
+                    </tokenized>
+                </word>
+                <word id="19" word="دونالد">
+                    <svm_prediction>
+                        <morph_feature_set diac="دُونالد" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="u" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac="دُونالد" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="u" enc0="0" stem="دُونالد"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="دونالد"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="dwnAld" form1="NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="دونالد" form1="دونالد" form2="دُونالد" form3="PROP" form4="NNP" form5="NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="دونالد"/>
+                    </tokenized>
+                </word>
+                <word id="20" word="ترامب">
+                    <svm_prediction>
+                        <morph_feature_set diac="ترامب" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="1" asp="i" vox="a" mod="s" gen="f" num="s" stt="na" cas="u" enc0="3d_poss"/>
+                    </svm_prediction>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ترامب"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="trAmb" form1="NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ترامب" form1="ترامب" form2="ترامب" form3="NOM" form4="NN" form5="NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ترامب"/>
+                    </tokenized>
+                </word>
+                <word id="21" word="مبنى">
+                    <svm_prediction>
+                        <morph_feature_set diac="مَبْنَى" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="u" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8944319152280099">
+                        <morph_feature_set diac="مَبْنَى" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="u" enc0="0" stem="مَبْنَى"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="مبني"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="mbny" form1="NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="مبنى" form1="مبني" form2="مَبْنَى" form3="NOM" form4="NN" form5="NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="مبني"/>
+                    </tokenized>
+                </word>
+                <word id="22" word="الكونغرس">
+                    <svm_prediction>
+                        <morph_feature_set diac="الكُونْغرِس" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac="الكُونْغرِس" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0" stem="كُونْغرِس"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الكونغرس"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="kwngrs" form1="NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الكونغرس" form1="الكونغرس" form2="كُونْجرِس" form3="PROP" form4="DT+NNP" form5="DET+NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="كونغرس"/>
+                    </tokenized>
+                </word>
+                <word id="23" word=",">
+                    <svm_prediction>
+                        <morph_feature_set diac="," pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac="," pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0=","/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="," form1="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="," form1="," form2="," form3="PNX" form4="PUNC" form5="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0=","/>
+                    </tokenized>
+                </word>
+                <word id="24" word="بعد">
+                    <svm_prediction>
+                        <morph_feature_set diac="بَعْدَ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="a" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8705370026304016">
+                        <morph_feature_set diac="بُعْدَ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="a" enc0="0" stem="بُعْد"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="بعد"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="bEd" form1="NOUN+CASE_DEF_ACC"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="بعد" form1="بعد" form2="بُعْد" form3="NOM" form4="NN" form5="NOUN+CASE_DEF_ACC"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="بعد"/>
+                    </tokenized>
+                </word>
+                <word id="25" word="أن">
+                    <svm_prediction>
+                        <morph_feature_set diac="إِنَّ" pos="conj_sub" prc3="0" prc2="0" prc1="0" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8692050425559487">
+                        <morph_feature_set diac="أَن" pos="conj_sub" prc3="0" prc2="0" prc1="0" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="0" stem="أَن"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ان"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="An" form1="SUB_CONJ"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="أن" form1="ان" form2="أَنْ" form3="PRT" form4="AN" form5="SUB_CONJ"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ان"/>
+                    </tokenized>
+                </word>
+                <word id="26" word="دعاهم">
+                    <svm_prediction>
+                        <morph_feature_set diac="دَعاهُم" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="m" num="s" stt="na" cas="na" enc0="3mp_dobj"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8939055125741865">
+                        <morph_feature_set diac="دَعاهُم" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="m" num="s" stt="na" cas="na" enc0="3mp_dobj" stem="دَعا"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="دعا"/>
+                        <tok id="1" form0="+هم"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="dEA" form1="PV+PVSUFF_SUBJ:3MS"/>
+                        <tok id="1" form0="+hm" form1="+PVSUFF_DO:3MP"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="دعا" form1="دعا" form2="دَعا" form3="VRB" form4="VBD" form5="PV+PVSUFF_SUBJ:3MS"/>
+                        <tok id="1" form0="+هم" form1="+هم" form2="+هُم" form3="+NOM" form4="+PRP" form5="+PVSUFF_DO:3MP"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="دعا"/>
+                        <tok id="1" form0="+هم"/>
+                    </tokenized>
+                </word>
+                <word id="27" word="للتوجه">
+                    <svm_prediction>
+                        <morph_feature_set diac="لِلتَّوَجُّهِ" pos="noun" prc3="0" prc2="0" prc1="li_prep" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8944374375687777">
+                        <morph_feature_set diac="لِلتَّوَجُّهِ" pos="noun" prc3="0" prc2="0" prc1="li_prep" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="تَوَجُّه"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ل+"/>
+                        <tok id="1" form0="التوجه"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="l+" form1="PREP+"/>
+                        <tok id="1" form0="Al+" form1="DET+"/>
+                        <tok id="2" form0="twjh" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ل+" form1="ل+" form2="لِ+" form3="PRT+" form4="IN+" form5="PREP+"/>
+                        <tok id="1" form0="التوجه" form1="التوجه" form2="تَوَجُّه" form3="NOM" form4="DT+NN" form5="DET+NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ل+"/>
+                        <tok id="1" form0="ال+"/>
+                        <tok id="2" form0="توجه"/>
+                    </tokenized>
+                </word>
+                <word id="28" word="للمبنى">
+                    <svm_prediction>
+                        <morph_feature_set diac="لِلمَبْنَى" pos="noun" prc3="0" prc2="0" prc1="li_prep" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8939214642016046">
+                        <morph_feature_set diac="لِلمَبْنَى" pos="noun" prc3="0" prc2="0" prc1="li_prep" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0" stem="مَبْنَى"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ل+"/>
+                        <tok id="1" form0="المبني"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="l+" form1="PREP+"/>
+                        <tok id="1" form0="Al+" form1="DET+"/>
+                        <tok id="2" form0="mbny" form1="NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ل+" form1="ل+" form2="لِ+" form3="PRT+" form4="IN+" form5="PREP+"/>
+                        <tok id="1" form0="المبنى" form1="المبني" form2="مَبْنَى" form3="NOM" form4="DT+NN" form5="DET+NOUN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ل+"/>
+                        <tok id="1" form0="ال+"/>
+                        <tok id="2" form0="مبني"/>
+                    </tokenized>
+                </word>
+                <word id="29" word="لمنع">
+                    <svm_prediction>
+                        <morph_feature_set diac="لِمَنْعِ" pos="noun" prc3="0" prc2="0" prc1="li_prep" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8944178048308999">
+                        <morph_feature_set diac="لِمَنْعِ" pos="noun" prc3="0" prc2="0" prc1="li_prep" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="g" enc0="0" stem="مَنْع"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ل+"/>
+                        <tok id="1" form0="منع"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="l+" form1="PREP+"/>
+                        <tok id="1" form0="mnE" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ل+" form1="ل+" form2="لِ+" form3="PRT+" form4="IN+" form5="PREP+"/>
+                        <tok id="1" form0="منع" form1="منع" form2="مَنْع" form3="NOM" form4="NN" form5="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ل+"/>
+                        <tok id="1" form0="منع"/>
+                    </tokenized>
+                </word>
+                <word id="30" word="ما">
+                    <svm_prediction>
+                        <morph_feature_set diac="ما" pos="pron_rel" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="u" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8946084067761285">
+                        <morph_feature_set diac="ما" pos="pron_rel" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="i" cas="u" enc0="0" stem="ما"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ما"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="mA" form1="REL_PRON"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ما" form1="ما" form2="ما" form3="NOM" form4="WP" form5="REL_PRON"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ما"/>
+                    </tokenized>
+                </word>
+                <word id="31" word="وصفوها">
+                    <svm_prediction>
+                        <morph_feature_set diac="وَصَفْوها" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="m" num="p" stt="na" cas="na" enc0="3fs_poss"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8630323562562303">
+                        <morph_feature_set diac="وَصَفُوها" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="m" num="p" stt="na" cas="na" enc0="3fs_dobj" stem="وَصَف"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="وصفوا"/>
+                        <tok id="1" form0="+ها"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="wSfwA" form1="PV+PVSUFF_SUBJ:3MP"/>
+                        <tok id="1" form0="+hA" form1="+PVSUFF_DO:3FS"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="وصفوا" form1="وصفوا" form2="وَصَف" form3="VRB" form4="VBD" form5="PV+PVSUFF_SUBJ:3MP"/>
+                        <tok id="1" form0="+ها" form1="+ها" form2="+ها" form3="+NOM" form4="+PRP" form5="+PVSUFF_DO:3FS"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="وصفوا"/>
+                        <tok id="1" form0="+ها"/>
+                    </tokenized>
+                </word>
+                <word id="32" word="بسرقة">
+                    <svm_prediction>
+                        <morph_feature_set diac="بِسَرِقَةِ" pos="noun" prc3="0" prc2="0" prc1="bi_prep" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.894096931751717">
+                        <morph_feature_set diac="بِسَرِقَةِ" pos="noun" prc3="0" prc2="0" prc1="bi_prep" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="g" enc0="0" stem="سَرِق"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="ب+"/>
+                        <tok id="1" form0="سرقة"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="b+" form1="PREP+"/>
+                        <tok id="1" form0="srqp" form1="NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="ب+" form1="ب+" form2="بِ+" form3="PRT+" form4="IN+" form5="PREP+"/>
+                        <tok id="1" form0="سرقة" form1="سرقة" form2="سَرِقَة" form3="NOM" form4="NN" form5="NOUN+NSUFF_FEM_SG+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ب+"/>
+                        <tok id="1" form0="سرقة"/>
+                    </tokenized>
+                </word>
+                <word id="33" word="الانتخابات">
+                    <svm_prediction>
+                        <morph_feature_set diac="الاِنْتِخاباتِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="f" num="p" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8947650584943242">
+                        <morph_feature_set diac="الاِنْتِخاباتِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="f" num="p" stt="d" cas="g" enc0="0" stem="ٱِنْتِخاب"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الانتخابات"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="AntxAbAt" form1="NOUN+NSUFF_FEM_PL+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الانتخابات" form1="الانتخابات" form2="ٱِنْتِخاب" form3="NOM" form4="DT+NNS" form5="DET+NOUN+NSUFF_FEM_PL+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="انتخابات"/>
+                    </tokenized>
+                </word>
+                <word id="34" word=",">
+                    <svm_prediction>
+                        <morph_feature_set diac="," pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac="," pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0=","/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="," form1="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="," form1="," form2="," form3="PNX" form4="PUNC" form5="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0=","/>
+                    </tokenized>
+                </word>
+                <word id="35" word="فيما">
+                    <svm_prediction>
+                        <morph_feature_set diac="فِيما" pos="conj_sub" prc3="0" prc2="0" prc1="0" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8956421916362802">
+                        <morph_feature_set diac="فِيما" pos="conj_sub" prc3="0" prc2="0" prc1="0" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="0" stem="فِيما"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="فيما"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="fymA" form1="SUB_CONJ"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="فيما" form1="فيما" form2="ما" form3="PRT" form4="AN" form5="SUB_CONJ"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="فيما"/>
+                    </tokenized>
+                </word>
+                <word id="36" word="رفضت">
+                    <svm_prediction>
+                        <morph_feature_set diac="رَفَضَت" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="f" num="s" stt="na" cas="na" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8948497252865323">
+                        <morph_feature_set diac="رَفَضَت" pos="verb" prc3="0" prc2="0" prc1="0" prc0="0" per="3" asp="p" vox="a" mod="i" gen="f" num="s" stt="na" cas="na" enc0="0" stem="رَفَض"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="رفضت"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="rfDt" form1="PV+PVSUFF_SUBJ:3FS"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="رفضت" form1="رفضت" form2="رَفَض" form3="VRB" form4="VBD" form5="PV+PVSUFF_SUBJ:3FS"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="رفضت"/>
+                    </tokenized>
+                </word>
+                <word id="37" word="وزارة">
+                    <svm_prediction>
+                        <morph_feature_set diac="وِزارَةُ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="n" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.894255425187027">
+                        <morph_feature_set diac="وِزارَةُ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="f" num="s" stt="c" cas="n" enc0="0" stem="وِزار"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="وزارة"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="wzArp" form1="NOUN+NSUFF_FEM_SG+CASE_DEF_NOM"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="وزارة" form1="وزارة" form2="وِزارَة" form3="NOM" form4="NN" form5="NOUN+NSUFF_FEM_SG+CASE_DEF_NOM"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="وزارة"/>
+                    </tokenized>
+                </word>
+                <word id="38" word="الدفاع">
+                    <svm_prediction>
+                        <morph_feature_set diac="الدِّفاعِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8992167844888498">
+                        <morph_feature_set diac="الدِّفاعِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="دِفاع"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الدفاع"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="dfAE" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الدفاع" form1="الدفاع" form2="دِفاع" form3="NOM" form4="DT+NN" form5="DET+NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="دفاع"/>
+                    </tokenized>
+                </word>
+                <word id="39" word="(">
+                    <svm_prediction>
+                        <morph_feature_set diac="(" pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac="(" pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="-LRB-"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="-LRB-" form1="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="-LRB-" form1="-LRB-" form2="-LRB-" form3="PNX" form4="PUNC" form5="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="-LRB-"/>
+                    </tokenized>
+                </word>
+                <word id="40" word="البنتاغون">
+                    <svm_prediction>
+                        <morph_feature_set diac="البِنْتاغُون" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac="البِنْتاغُون" pos="noun_prop" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="u" enc0="0" stem="بِنْتاغُون"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="البنتاغون"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="bntAgwn" form1="NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="البنتاغون" form1="البنتاغون" form2="بِنْتاغُون" form3="PROP" form4="DT+NNP" form5="DET+NOUN_PROP"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="بنتاغون"/>
+                    </tokenized>
+                </word>
+                <word id="41" word=")">
+                    <svm_prediction>
+                        <morph_feature_set diac=")" pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="1.0">
+                        <morph_feature_set diac=")" pos="punc" prc3="na" prc2="na" prc1="na" prc0="na" per="na" asp="na" vox="na" mod="na" gen="na" num="na" stt="na" cas="na" enc0="na"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="-RRB-"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="-RRB-" form1="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="-RRB-" form1="-RRB-" form2="-RRB-" form3="PNX" form4="PUNC" form5="PUNC"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="-RRB-"/>
+                    </tokenized>
+                </word>
+                <word id="42" word="نشر">
+                    <svm_prediction>
+                        <morph_feature_set diac="نَشْرِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="i" gen="m" num="s" stt="c" cas="a" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8478739209783405">
+                        <morph_feature_set diac="نَشْرَ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="0" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="c" cas="a" enc0="0" stem="نَشْر"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="نشر"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="n$r" form1="NOUN+CASE_DEF_ACC"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="نشر" form1="نشر" form2="نَشْر" form3="NOM" form4="NN" form5="NOUN+CASE_DEF_ACC"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="نشر"/>
+                    </tokenized>
+                </word>
+                <word id="43" word="الحرس">
+                    <svm_prediction>
+                        <morph_feature_set diac="الحَرَسِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8992167844888498">
+                        <morph_feature_set diac="الحَرَسِ" pos="noun" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="حَرَس"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الحرس"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="Hrs" form1="NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الحرس" form1="الحرس" form2="حَرَس" form3="NOM" form4="DT+NN" form5="DET+NOUN+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="حرس"/>
+                    </tokenized>
+                </word>
+                <word id="44" word="الوطني">
+                    <svm_prediction>
+                        <morph_feature_set diac="الوَطَنِيِّ" pos="adj" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0"/>
+                    </svm_prediction>
+                    <analysis rank="0" score="0.8957755326635665">
+                        <morph_feature_set diac="الوَطَنِيِّ" pos="adj" prc3="0" prc2="0" prc1="0" prc0="Al_det" per="na" asp="na" vox="na" mod="na" gen="m" num="s" stt="d" cas="g" enc0="0" stem="وَطَنِيّ"/>
+                    </analysis>
+                    <tokenized scheme="ATB">
+                        <tok id="0" form0="الوطني"/>
+                    </tokenized>
+                    <tokenized scheme="D3_BWPOS">
+                        <tok id="0" form0="Al+" form1="DET+"/>
+                        <tok id="1" form0="wTny" form1="ADJ+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="ATB4MT">
+                        <tok id="0" form0="الوطني" form1="الوطني" form2="وَطَنِيّ" form3="NOM" form4="DT+JJ" form5="DET+ADJ+CASE_DEF_GEN"/>
+                    </tokenized>
+                    <tokenized scheme="MyD3">
+                        <tok id="0" form0="ال+"/>
+                        <tok id="1" form0="وطني"/>
+                    </tokenized>
+                </word>
+            </word_info>
+        </out_seg>
+    </out_doc>
+</madamira_output>
