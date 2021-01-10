@@ -20,8 +20,8 @@ public class APIExampleUse {
     private static final String INPUT_FILE = "src\\java\\Ressource\\SampleInputFile.xml";
     private static final String OUTPUT_FILE = "src\\java\\Ressource\\sampleOutputFile.xml";
 
-    public static void main(String [] args) {
-
+//    public static void main(String [] args) {
+        void APIExampleUse(){
         final MADAMIRAWrapper wrapper = new MADAMIRAWrapper();
         JAXBContext jc = null;
 

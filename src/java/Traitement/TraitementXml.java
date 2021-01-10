@@ -9,6 +9,8 @@ package Traitement;
  *
  * @author Mohammed
  */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import org.w3c.dom.Document;
@@ -16,6 +18,10 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -23,7 +29,13 @@ import java.util.List;
 
 public class TraitementXml {
 
-    public static void main(String argv[]) {
+//    public static void main(String argv[]) throws IOException {
+//        CreeInput("رحب الرئيس الأميركي المنتخب جو بايدن بقرار الرئيس دونالد ترامب عدم رغبته بحضور مراسم التنصيب، ووصف ترامب بأنه غير مؤهل للسلطة، محملا إياه مسؤولية اقتحام مبنى الكونغرس، ومؤكدا استعداده لاستلام الرئاسة");
+//    }
+
+    public TraitementXml(String MotTrait,String myFile,String myFileOut) throws IOException {
+        CreeInput( MotTrait,myFile);
+
         List<String> diaclitise = new ArrayList();
         diaclitise.add("َ");
         diaclitise.add("ً");
@@ -36,7 +48,7 @@ public class TraitementXml {
 
         try {
 //creating a constructor of file class and parsing an XML file  
-            File file = new File("src//java//Ressource//SampleOutputFile.xml");
+            File file = new File(myFileOut);
 //an instance of factory that gives a document builder  
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 //an instance of builder to parse the specified xml file  
@@ -95,17 +107,9 @@ public class TraitementXml {
                             List<String> carr = ConvertToList(caracterFormm);
 
                             if (carr.get(0).equals("+")) {
-//                                if (!carr.get(0).equals('+')) {
-//                                    String enC = "";
-//                                    for (int j = 1; j < carr.size(); j = j + 2) {
-//                                        enC += caracterDiac[caracterDiac.length - j];
-//                                    }
                                 MotDiaclitiseTrait = RemoveEnclitique(Formm, MotDiaclitiseTrait, diaclitise);
-//                                System.out.println("Steem == " + MotDiaclitiseTrait);
-//                                }
                             } else if (carr.get(carr.size() - 1).equals("+")) {
                                 MotDiaclitiseTrait = RemoveProclitique(Formm, MotDiaclitiseTrait, diaclitise);
-//                                System.out.println("Steem == " + MotDiaclitiseTrait);
                             } else {
                                 StemNDiac = Formm;
                             }
@@ -136,10 +140,6 @@ public class TraitementXml {
                         Stem = test;
                     }
                     System.out.println("Steem == " + Stem);
-//                    for (int i = 0; i < caracterDiac.length; i++) {
-//                        System.out.println(caracterDiac[i]);
-//                    }
-//                    System.out.println("Student id: " + eElement.getElementsByTagName("id").item(0).getTextContent());
                 }
             }
         } catch (Exception e) {
@@ -155,8 +155,8 @@ public class TraitementXml {
         return line;
     }
 
-    public static String RemoveProclitique(String Encl, String Mot, List<String> diaclitise) {
-        char[] caracterProc = Encl.toCharArray();
+    public static String RemoveProclitique(String Procl, String Mot, List<String> diaclitise) {
+        char[] caracterProc = Procl.toCharArray();
         char[] caracterMot = Mot.toCharArray();
 
         List<String> carrProc = ConvertToList(caracterProc);
@@ -166,6 +166,10 @@ public class TraitementXml {
         while (!carrProc.isEmpty()) {
             String mm = carrProc.get(0);
             int index = Mot.indexOf(mm);
+
+            if (mm.equals("ا")) {
+                index = 0;
+            }
             carrProc.remove(0);
             for (int i = 0; i <= index; i++) {
                 carrMot.remove(0);
@@ -193,7 +197,6 @@ public class TraitementXml {
         }
         for (int i = DepuSDiaclitise; i < carrMot.size() - LastDiaclitise; i++) {
             Res = Res.concat(carrMot.get(i) + "");
-            System.out.println(carrMot.get(i) + "#");
         }
         return Res;
 
@@ -232,9 +235,112 @@ public class TraitementXml {
 
         for (int i = 0; i < carrMot.size() - LastDiaclitise; i++) {
             Res = Res.concat(carrMot.get(i) + "");
-            System.out.println(carrMot.get(i) + "#");
         }
         return Res;
+
+    }
+
+    public static void CreeInput(String inn,String myFile) throws FileNotFoundException, IOException {
+        String Header = " <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                + "<!--\n"
+                + "  ~ Copyright (c) 2013. The Trustees of Columbia University in the City of New York.\n"
+                + "  ~ The copyright owner has no objection to the reproduction of this work by anyone for\n"
+                + "  ~ non-commercial use, but otherwise reserves all rights whatsoever.  For avoidance of\n"
+                + "  ~ doubt, this work may not be reproduced, or modified, in whole or in part, for commercial\n"
+                + "  ~ use without the prior written consent of the copyright owner.\n"
+                + "  -->\n"
+                + "\n"
+                + "<madamira_input xmlns=\"urn:edu.columbia.ccls.madamira.configuration:0.1\">\n"
+                + "    <madamira_configuration>\n"
+                + "        <preprocessing sentence_ids=\"false\" separate_punct=\"true\" input_encoding=\"UTF8\"/>\n"
+                + "        <overall_vars output_encoding=\"UTF8\" dialect=\"MSA\" output_analyses=\"TOP\" morph_backoff=\"NONE\"/>\n"
+                + "        <requested_output>\n"
+                + "            <req_variable name=\"PREPROCESSED\" value=\"true\" />\n"
+                + "            <req_variable name=\"STEM\" value=\"true\" />\n"
+                + "            <req_variable name=\"GLOSS\" value=\"false\" />\n"
+                + "            <req_variable name=\"LEMMA\" value=\"false\" />\n"
+                + "            <req_variable name=\"DIAC\" value=\"true\" />\n"
+                + "            <req_variable name=\"ASP\" value=\"true\" />\n"
+                + "            <req_variable name=\"CAS\" value=\"true\" />\n"
+                + "            <req_variable name=\"ENC0\" value=\"true\" />\n"
+                + "            <req_variable name=\"ENC1\" value=\"false\" />\n"
+                + "            <req_variable name=\"ENC2\" value=\"false\" />\n"
+                + "            <req_variable name=\"GEN\" value=\"true\" />\n"
+                + "            <req_variable name=\"MOD\" value=\"true\" />\n"
+                + "            <req_variable name=\"NUM\" value=\"true\" />\n"
+                + "            <req_variable name=\"PER\" value=\"true\" />\n"
+                + "            <req_variable name=\"POS\" value=\"true\" />\n"
+                + "            <req_variable name=\"PRC0\" value=\"true\" />\n"
+                + "            <req_variable name=\"PRC1\" value=\"true\" />\n"
+                + "            <req_variable name=\"PRC2\" value=\"true\" />\n"
+                + "            <req_variable name=\"PRC3\" value=\"true\" />\n"
+                + "            <req_variable name=\"STT\" value=\"true\" />\n"
+                + "            <req_variable name=\"VOX\" value=\"true\" />\n"
+                + "            <req_variable name=\"BW\" value=\"false\" />\n"
+                + "            <req_variable name=\"SOURCE\" value=\"false\" />\n"
+                + "			<req_variable name=\"NER\" value=\"true\" />\n"
+                + "			<req_variable name=\"BPC\" value=\"true\" />\n"
+                + "        </requested_output>\n"
+                + "        <tokenization>\n"
+                + "            <scheme alias=\"ATB\" />\n"
+                + "			<scheme alias=\"D3_BWPOS\" /> <!-- Required for NER -->\n"
+                + "            <scheme alias=\"ATB4MT\" />\n"
+                + "            <scheme alias=\"MyD3\">\n"
+                + "				<!-- Same as D3 -->\n"
+                + "				<scheme_override alias=\"MyD3\"\n"
+                + "								 form_delimiter=\"\\u00B7\"\n"
+                + "								 include_non_arabic=\"true\"\n"
+                + "								 mark_no_analysis=\"false\"\n"
+                + "								 token_delimiter=\" \"\n"
+                + "								 tokenize_from_BW=\"false\">\n"
+                + "					<split_term_spec term=\"PRC3\"/>\n"
+                + "					<split_term_spec term=\"PRC2\"/>\n"
+                + "					<split_term_spec term=\"PART\"/>\n"
+                + "					<split_term_spec term=\"PRC0\"/>\n"
+                + "					<split_term_spec term=\"REST\"/>\n"
+                + "					<split_term_spec term=\"ENC0\"/>\n"
+                + "					<token_form_spec enclitic_mark=\"+\"\n"
+                + "									 proclitic_mark=\"+\"\n"
+                + "									 token_form_base=\"WORD\"\n"
+                + "									 transliteration=\"UTF8\">\n"
+                + "						<normalization type=\"ALEF\"/>\n"
+                + "						<normalization type=\"YAA\"/>\n"
+                + "						<normalization type=\"DIAC\"/>\n"
+                + "						<normalization type=\"LEFTPAREN\"/>\n"
+                + "						<normalization type=\"RIGHTPAREN\"/>\n"
+                + "					</token_form_spec>\n"
+                + "				</scheme_override>\n"
+                + "			</scheme>\n"
+                + "        </tokenization>\n"
+                + "    </madamira_configuration>\n"
+                + "\n"
+                + "\n"
+                + "    <in_doc id=\"ExampleDocument\">\n"
+                + "        <in_seg id=\"SENT1\">";
+
+        String footer = "</in_seg>\n"
+                + "       \n"
+                + "    </in_doc>\n"
+                + "\n"
+                + "</madamira_input>\n"
+                + "";
+
+        //            FileInputStream fstream =                 new FileInputStream(getServletContext().getRealPath("/database.txt"));
+        //            FileWriter fw = new FileWriter(getServletContext().getRealPath("\\src\\java\\Ressource")+"\\SampleInputFile.xml");
+        //                    FileWriter myWriter = new FileWriter("MIni_Projet_IL\\src\\java\\Traitement\\TraitementXml.java")) {
+        //                myWriter.write("Files in Java might be tricky, but it is fun enough!");
+        ////                    FileWriter fw = new FileWriter("web\\SampleOutputFile.xml")) {
+        //                myWriter.write(Header);
+        //                myWriter.write(inn);
+        //                myWriter.write(footer);
+        //                myWriter.close();
+        BufferedWriter lecteurAvecBuffer = new BufferedWriter(new FileWriter(myFile));
+
+        lecteurAvecBuffer.write("hhhhhh");
+        lecteurAvecBuffer.write(Header);
+        lecteurAvecBuffer.write(inn);
+        lecteurAvecBuffer.write(footer);
+        lecteurAvecBuffer.close();
 
     }
 
