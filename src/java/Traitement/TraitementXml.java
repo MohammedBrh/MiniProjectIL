@@ -315,11 +315,9 @@ public class TraitementXml {
                 + "    </madamira_configuration>\n"
                 + "\n"
                 + "\n"
-                + "    <in_doc id=\"ExampleDocument\">\n"
-                + "        <in_seg id=\"SENT1\">";
+                + "    <in_doc id=\"ExampleDocument\">\n";
 
-        String footer = "</in_seg>\n"
-                + "       \n"
+        String footer = "       \n"
                 + "    </in_doc>\n"
                 + "\n"
                 + "</madamira_input>\n"
@@ -336,9 +334,10 @@ public class TraitementXml {
         //                myWriter.close();
         BufferedWriter lecteurAvecBuffer = new BufferedWriter(new FileWriter(myFile));
 
-        lecteurAvecBuffer.write("hhhhhh");
         lecteurAvecBuffer.write(Header);
+        lecteurAvecBuffer.write("        <in_seg id=\"SENT1\">");
         lecteurAvecBuffer.write(inn);
+                lecteurAvecBuffer.write("</in_seg>\n");
         lecteurAvecBuffer.write(footer);
         lecteurAvecBuffer.close();
 
