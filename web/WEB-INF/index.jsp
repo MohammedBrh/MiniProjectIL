@@ -3,8 +3,8 @@
     Created on : 8 janv. 2021, 23:23:46
     Author     : Mohammed
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page pageEncoding="utf-8" %>
+<%@page contentType="text/html" %>
 <!DOCTYPE html>
 <html>
     <head>

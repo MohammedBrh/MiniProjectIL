@@ -17,15 +17,14 @@ public class APIExampleUse {
 
     // MADAMIRA namespace as defined by its XML schema
     private static final String MADAMIRA_NS = "edu.columbia.ccls.madamira.configuration";
-    private static final String INPUT_FILE = "src\\java\\Ressource\\SampleInputFile.xml";
-    private static final String OUTPUT_FILE = "src\\java\\Ressource\\sampleOutputFile.xml";
+    private static final String INPUT_FILE = "C:\\ProjectIL\\Resource\\SampleInputFile.xml";
+    private static final String OUTPUT_FILE = "C:\\ProjectIL\\Resource\\sampleOutputFile.xml";
 
-//    public static void main(String [] args) {
-        void APIExampleUse(){
+//    public static void main(String [] args) throws JAXBException, ExecutionException, InterruptedException {
+        public void APExampleUse() throws JAXBException, ExecutionException, InterruptedException{
         final MADAMIRAWrapper wrapper = new MADAMIRAWrapper();
         JAXBContext jc = null;
 
-        try {
             jc = JAXBContext.newInstance(MADAMIRA_NS);
             Unmarshaller unmarshaller = jc.createUnmarshaller();
 
@@ -33,7 +32,7 @@ public class APIExampleUse {
             // madamira_input element in the XML
             final MadamiraInput input = (MadamiraInput)unmarshaller.unmarshal(new File( INPUT_FILE ) );
 
-            {
+            
                 int numSents = input.getInDoc().getInSeg().size();
                 String outputAnalysis = input.getMadamiraConfiguration().getOverallVars().getOutputAnalyses();
                 String outputEncoding = input.getMadamiraConfiguration().getOverallVars().getOutputEncoding();
@@ -41,31 +40,20 @@ public class APIExampleUse {
                 System.out.println("processing " + numSents +
                         " sentences for analysis type = " + outputAnalysis +
                         " and output encoding = " + outputEncoding);
-            }
+            
 
             // The structure of the MadamiraOutput object is exactly similar to the
             // madamira_output element in the XML
             final MadamiraOutput output = wrapper.processString(input);
-            {
-                int numSents = output.getOutDoc().getOutSeg().size();
-
-                System.out.println("processed output contains "+numSents+" sentences...");
-            }
+            
+                int numSentstt = output.getOutDoc().getOutSeg().size();
+            
+                System.out.println("processed output contains "+numSentstt+" sentences...");
+            
 
 
             jc.createMarshaller().marshal(output, new File(OUTPUT_FILE));
 
-
-        } catch (JAXBException ex) {
-            System.out.println("Error marshalling or unmarshalling data: "
-                    + ex.getMessage());
-        } catch (InterruptedException ex) {
-            System.out.println("MADAMIRA thread interrupted: "
-                    +ex.getMessage());
-        } catch (ExecutionException ex) {
-            System.out.println("Unable to retrieve result of task. " +
-                    "MADAMIRA task may have been aborted: "+ex.getCause());
-        }
 
         wrapper.shutdown();
     }

@@ -6,10 +6,12 @@ package Controller;
  * and open the template in the editor.
  */
 import Traitement.TraitementXml;
-import java.io.FileInputStream;
+import com.sun.org.apache.xml.internal.serializer.Encodings;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -41,17 +43,49 @@ public class Index extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String Sent = request.getParameter("Tarai");
+//        request.setCharacterEncoding("UTF-8");
         System.out.println(Sent);
-//        PrintWriter writer = new PrintWriter(System.out);
-//        CreeInput(Sent);
-        String myfile = getServletContext().getRealPath("SampleInputFile.xml");
-        String myfileOut = getServletContext().getRealPath("SampleOutputFile.xml");
-        System.out.println("File :"+myfile);
-        TraitementXml t = new TraitementXml(Sent, myfile,myfileOut);
+        List<Integer> sb = new ArrayList<>();
+        for (char c : Sent.toCharArray()) {
+            sb.add((int) c);
+        }
+        sb.forEach((ii) -> {
+            System.out.println((int) ii + " --");
+        });
+        CreeInput(sb);
+        // store ascii integer string array in large integer
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">");
+            out.println("<title>Servlet NewServlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            char[] b = Sent.toCharArray();
+//            Traitement.TraitementXml t = new TraitementXml(b, "G:\\wwssservice\\MIni_Projet_IL\\src\\java\\Ressource\\SampleInputFile.xml", "G:\\wwssservice\\MIni_Projet_IL\\src\\java\\Ressource\\SampleInputFile.xml");
+            for (char n : b) {
+                String text = Integer.toBinaryString(n);
+                System.out.println(n + "  ==  " +text);
+            }
+            out.println("<h1>Servlet NewServlet at " + request.getContextPath() + "</h1>");
+            out.println("<p dir=\"rtl\" >" + Sent + "</p>");
+            System.out.println(new String(Sent.getBytes(), "UTF-8"));
+            out.println(new String(Sent.getBytes(), "utf-8"));
+            out.println("</body>");
+            out.println("</html>");
+        }
+////        PrintWriter writer = new PrintWriter(System.out);
+//        String myfile = getServletContext().getRealPath("tes.txt");
+////        String myfile = getServletContext().getRealPath("SampleInputFile.xml");
+//        String myfileOut = getServletContext().getRealPath("SampleOutputFile.xml");
+//        System.out.println("File :" + myfile);
+//        TraitementXml t = new TraitementXml(Sent, "G:\\wwssservice\\MIni_Projet_IL\\src\\java\\Ressource\\SampleInputFile.xml", "G:\\wwssservice\\MIni_Projet_IL\\web\\SampleOutputFile.xml");
 
     }
 
-    public void CreeInput(String inn) {
+    public void CreeInput(List<Integer> inn) {
         String Header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
                 + "<!--\n"
                 + "  ~ Copyright (c) 2013. The Trustees of Columbia University in the City of New York.\n"
@@ -77,7 +111,7 @@ public class Index extends HttpServlet {
                 + "            <req_variable name=\"ENC1\" value=\"false\" />\n"
                 + "            <req_variable name=\"ENC2\" value=\"false\" />\n"
                 + "            <req_variable name=\"GEN\" value=\"true\" />\n"
-                + "            <req_variable name=\"MOD\" value=\"true\" />\n"
+                + "            <req_variable   name=\"MOD\" value=\"true\" />\n"
                 + "            <req_variable name=\"NUM\" value=\"true\" />\n"
                 + "            <req_variable name=\"PER\" value=\"true\" />\n"
                 + "            <req_variable name=\"POS\" value=\"true\" />\n"
@@ -138,9 +172,15 @@ public class Index extends HttpServlet {
         try {
             try (//            FileInputStream fstream =                 new FileInputStream(getServletContext().getRealPath("/database.txt"));
                     //            FileWriter fw = new FileWriter(getServletContext().getRealPath("\\src\\java\\Ressource")+"\\SampleInputFile.xml");
-                    FileWriter fw = new FileWriter("web\\SampleOutputFile.xml")) {
+                    FileWriter fw = new FileWriter("G:\\wwssservice\\MIni_Projet_IL\\src\\java\\Ressource\\SampleInputFile.xml")) {
                 fw.write(Header);
-                fw.write(inn);
+                String str = "";
+                for (int c : inn) {
+                    str += new Character((char) c).toString();
+                }
+                System.out.println(str);
+                fw.write(str);
+
                 fw.write(footer);
             }
             System.out.println("Le texte a été écrit avec succès");

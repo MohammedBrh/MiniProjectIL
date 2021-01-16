@@ -26,17 +26,22 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
+import javax.xml.bind.JAXBException;
 
 public class TraitementXml {
-
-//    public static void main(String argv[]) throws IOException {
+//
+    public static void main(String argv[]) throws IOException, JAXBException, InterruptedException, ExecutionException {
 //        CreeInput("رحب الرئيس الأميركي المنتخب جو بايدن بقرار الرئيس دونالد ترامب عدم رغبته بحضور مراسم التنصيب، ووصف ترامب بأنه غير مؤهل للسلطة، محملا إياه مسؤولية اقتحام مبنى الكونغرس، ومؤكدا استعداده لاستلام الرئاسة");
 //    }
-
-    public TraitementXml(String MotTrait,String myFile,String myFileOut) throws IOException {
-        CreeInput( MotTrait,myFile);
-
+//    public TraitementXml( ) throws IOException {}
+//    public List<String> OooutPut()throws IOException, JAXBException, InterruptedException, ExecutionException {
+//        CreeInput(MotTrait, myFile);
+        APIExampleUse p = new APIExampleUse();
+        p.APExampleUse();
         List<String> diaclitise = new ArrayList();
+        List<String> Ssstem = new ArrayList();
         diaclitise.add("َ");
         diaclitise.add("ً");
         diaclitise.add("ُ");
@@ -48,7 +53,8 @@ public class TraitementXml {
 
         try {
 //creating a constructor of file class and parsing an XML file  
-            File file = new File(myFileOut);
+            List<String> ListStopWord = lireStoprWord();
+            File file = new File("C:\\ProjectIL\\Resource\\sampleOutputFile.xml");
 //an instance of factory that gives a document builder  
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 //an instance of builder to parse the specified xml file  
@@ -64,6 +70,11 @@ public class TraitementXml {
                 System.out.println("\nNode Name :" + node.getNodeName());
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) node;
+
+                    String motAttrait = eElement.getAttribute("word");
+                    if (ListStopWord.contains(motAttrait)) {
+                        continue;
+                    }
                     NodeList nodeListSE = eElement.getElementsByTagName("morph_feature_set");
                     NodeList nodeListTok = eElement.getElementsByTagName("tokenized");
                     Element eElementDi = (Element) nodeListSE.item(0);
@@ -72,86 +83,96 @@ public class TraitementXml {
                     Element eElementTok = (Element) NOdeTook;
                     NodeList nodeListTokFor = eElementTok.getElementsByTagName("tok");
 
-                    String MotDiaclitise = normalize(eElementDi.getAttribute("diac"));
-                    if (MotDiaclitise.isEmpty()) {
+                    String MotDiaclitise = normalize(eElementDi.getAttribute("diac")).replaceAll("ّ", "");
+                    if (MotDiaclitise.isEmpty() || diaclitise.contains(MotDiaclitise) || ListStopWord.contains(MotDiaclitise)) {
                         continue;
                     }
                     char[] caracterDiac = MotDiaclitise.toCharArray();
 
                     System.out.println("Diaclitise       :" + MotDiaclitise);
-                    String MotDiaclitiseTrait = MotDiaclitise;
-                    String Stem = "";
-                    if (nodeListTokFor.getLength() <= 1) {
-                        char[] caracterMot = MotDiaclitise.toCharArray();
-                        List<String> carrMot = ConvertToList(caracterMot);
-                        int LastDiaclitise = 0;
-                        if (diaclitise.contains(carrMot.get(carrMot.size() - 1))) {
-                            LastDiaclitise++;
-                        }
-                        if (diaclitise.contains(carrMot.get(carrMot.size() - 1)) && diaclitise.contains(carrMot.get(carrMot.size() - 2))) {
-                            LastDiaclitise++;
-                        }
-                        for (int i = 0; i < carrMot.size() - LastDiaclitise; i++) {
-                            Stem = Stem.concat(carrMot.get(i) + "");
-                            System.out.println(carrMot.get(i) + "|");
-                        }
-
-                    } else {
-                        String StemNDiac = "";
-                        for (int itrTok = 0; itrTok < nodeListTokFor.getLength(); itrTok++) {
-
-                            Node nodeTok = nodeListTokFor.item(itrTok);
-                            Element eElementTokK = (Element) nodeTok;
-                            String Formm = eElementTokK.getAttribute("form0");
-                            char[] caracterFormm = Formm.toCharArray();
-                            List<String> carr = ConvertToList(caracterFormm);
-
-                            if (carr.get(0).equals("+")) {
-                                MotDiaclitiseTrait = RemoveEnclitique(Formm, MotDiaclitiseTrait, diaclitise);
-                            } else if (carr.get(carr.size() - 1).equals("+")) {
-                                MotDiaclitiseTrait = RemoveProclitique(Formm, MotDiaclitiseTrait, diaclitise);
-                            } else {
-                                StemNDiac = Formm;
+                    
+                    if (!diaclitise.contains(MotDiaclitise)) {
+                        String MotDiaclitiseTrait = MotDiaclitise;
+                        String Stem = "";
+                        if (nodeListTokFor.getLength() <= 1) {
+                            char[] caracterMot = MotDiaclitise.toCharArray();
+                            List<String> carrMot = ConvertToList(caracterMot);
+                            int LastDiaclitise = 0;
+                            if (diaclitise.contains(carrMot.get(carrMot.size() - 1))) {
+                                LastDiaclitise++;
                             }
-                        }
-                        Stem = MotDiaclitiseTrait;
-                        char[] stemDiac = MotDiaclitiseTrait.toCharArray();
-                        char[] stemNDiac = StemNDiac.toCharArray();
-                        String test = "";
+                            if (carrMot.size() > 2) {
+                                if (diaclitise.contains(carrMot.get(carrMot.size() - 1)) && diaclitise.contains(carrMot.get(carrMot.size() - 2))) {
+                                    LastDiaclitise++;
+                                }
+                            }
 
-                        List<String> StemNoDia = ConvertToList(stemNDiac);
+                            for (int i = 0; i < carrMot.size() - LastDiaclitise; i++) {
+                                Stem = Stem.concat(carrMot.get(i) + "");
+                            }
 
-                        List<String> StemDia = ConvertToList(stemDiac);
-                        List<String> StemDiaF = ConvertToList(stemDiac);
-                        StemDia.removeAll(diaclitise);
-                        for (String s : StemDiaF) {
-                            if (diaclitise.contains(s)) {
-                                test += s;
-                            } else {
+                        } else {
+                            String StemNDiac = "";
+                            for (int itrTok = 0; itrTok < nodeListTokFor.getLength(); itrTok++) {
+
+                                Node nodeTok = nodeListTokFor.item(itrTok);
+                                Element eElementTokK = (Element) nodeTok;
+                                String Formm = eElementTokK.getAttribute("form0");
+                                char[] caracterFormm = Formm.toCharArray();
+                                List<String> carr = ConvertToList(caracterFormm);
+
+                                if (carr.get(0).equals("+")) {
+                                    MotDiaclitiseTrait = RemoveEnclitique(Formm, MotDiaclitiseTrait, diaclitise);
+                                } else if (carr.get(carr.size() - 1).equals("+")) {
+                                    MotDiaclitiseTrait = RemoveProclitique(Formm, MotDiaclitiseTrait, diaclitise);
+                                } else {
+                                    StemNDiac = Formm;
+                                }
+                            }
+
+                            Stem = MotDiaclitiseTrait;
+                            char[] stemDiac = MotDiaclitiseTrait.toCharArray();
+                            char[] stemNDiacCC = StemNDiac.toCharArray();
+                            String test = "";
+
+                            List<String> StemNoDia = ConvertToList(stemNDiacCC);
+
+                            List<String> StemDia = ConvertToList(stemDiac);
+                            List<String> StemDiaF = ConvertToList(stemDiac);
+                            StemDia.removeAll(diaclitise);
+                            for (String s : StemDiaF) {
+                                if (diaclitise.contains(s) && !s.equals("")) {
+                                    test += s;
+                                } else {
+                                    test += StemNoDia.get(0);
+                                    StemNoDia.remove(0);
+                                }
+                            }
+                            if (!StemNoDia.isEmpty()) {
+
                                 test += StemNoDia.get(0);
                                 StemNoDia.remove(0);
                             }
+                            Stem = test;
                         }
-                        if (!StemNoDia.isEmpty()) {
-
-                            test += StemNoDia.get(0);
-                            StemNoDia.remove(0);
-                        }
-                        Stem = test;
+                        Stem = RemoveLastDiacr(Stem, diaclitise);
+                        System.out.println(motAttrait+" Steem == " + Stem);
+                     
+                        Ssstem.add(Stem + "," + motAttrait);
                     }
-                    System.out.println("Steem == " + Stem);
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+//        return Ssstem;
     }
 
     public static String normalize(String linee) {
 
         String line = linee.replaceAll("\\s+", " ");
         line = line.replaceAll("\\p{Punct}|[a-zA-Z]|[0-9]", "");
-        line = line.replaceAll("(.)\\1{1,}", "$1");
+        line = line.replaceAll("((.)\\2{2})\\2+","$1$2");
         return line;
     }
 
@@ -181,40 +202,34 @@ public class TraitementXml {
             }
             Mot = Res;
         }
-        String Res = "";
-        int LastDiaclitise = 0, DepuSDiaclitise = 0;
-        if (diaclitise.contains(carrMot.get(0))) {
-            DepuSDiaclitise++;
-        }
-        if (diaclitise.contains(carrMot.get(0)) && diaclitise.contains(carrMot.get(1))) {
-            DepuSDiaclitise++;
-        }
-        if (diaclitise.contains(carrMot.get(carrMot.size() - 1))) {
-            LastDiaclitise++;
-        }
-        if (diaclitise.contains(carrMot.get(carrMot.size() - 1)) && diaclitise.contains(carrMot.get(carrMot.size() - 2))) {
-            LastDiaclitise++;
-        }
-        for (int i = DepuSDiaclitise; i < carrMot.size() - LastDiaclitise; i++) {
-            Res = Res.concat(carrMot.get(i) + "");
-        }
-        return Res;
+
+        return Mot;
 
     }
 
-    public static String RemoveEnclitique(String Proc, String Mot, List<String> diaclitise) {
-        char[] caracterProc = Proc.toCharArray();
+    public static String RemoveEnclitique(String Enc, String Mot, List<String> diaclitise) {
+        char[] caracterProc = Enc.toCharArray();
         char[] caracterMot = Mot.toCharArray();
 
-        List<String> carrProc = ConvertToList(caracterProc);
+        List<String> carrEnc = ConvertToList(caracterProc);
         List<String> carrMot = ConvertToList(caracterMot);
-        carrProc.remove("+");
-
-        while (!carrProc.isEmpty()) {
-            int kInd = carrProc.size() - 1;
-            String mm = carrProc.get(kInd);
+        carrEnc.remove("+");
+        while (!carrEnc.isEmpty()) {
+            int kInd = carrEnc.size() - 1;
+            String mm = carrEnc.get(kInd);
             int index = Mot.lastIndexOf(mm);
-            carrProc.remove(kInd);
+            if (index <= 0) {
+                int j = 1;
+                while (true) {
+                    index = Mot.lastIndexOf(Mot.length() - j);
+                    if (diaclitise.contains(Mot.charAt(Mot.length() - j))) {
+                        j++;
+                    } else {
+                        break;
+                    }
+                }
+            }
+            carrEnc.remove(kInd);
             for (int i = carrMot.size() - 1; i >= index; i--) {
                 carrMot.remove(i);
             }
@@ -240,7 +255,7 @@ public class TraitementXml {
 
     }
 
-    public static void CreeInput(String inn,String myFile) throws FileNotFoundException, IOException {
+    public static void CreeInput(char[] inn, String myFile) throws FileNotFoundException, IOException {
         String Header = " <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
                 + "<!--\n"
                 + "  ~ Copyright (c) 2013. The Trustees of Columbia University in the City of New York.\n"
@@ -336,8 +351,11 @@ public class TraitementXml {
 
         lecteurAvecBuffer.write(Header);
         lecteurAvecBuffer.write("        <in_seg id=\"SENT1\">");
-        lecteurAvecBuffer.write(inn);
-                lecteurAvecBuffer.write("</in_seg>\n");
+        String temp = new String(inn);
+
+        lecteurAvecBuffer.write(temp);
+
+        lecteurAvecBuffer.write("</in_seg>\n");
         lecteurAvecBuffer.write(footer);
         lecteurAvecBuffer.close();
 
@@ -349,6 +367,52 @@ public class TraitementXml {
             res.add(caracterProc[i] + "");
         }
         return res;
+    }
+
+    public static String RemoveLastDiacr(String carMot, List<String> diaclitise) {
+        String Res = "";
+
+        char[] caracterMot = carMot.toCharArray();
+        List<String> carrMot = ConvertToList(caracterMot);
+        int LastDiaclitise = 0, DepuSDiaclitise = 0;
+//        System.out.println("Diac :"+carrMot.size()+" erreur :"+carrMot.get(0));
+//        for(int i=0;i<carrMot.size();i++)
+//            System.out.println(carrMot.get(i)+" + ");
+//        System.out.println(diaclitise);
+//        System.out.println(diaclitise.contains(carrMot.get(0)));
+        if (diaclitise.contains(carrMot.get(0))) {
+            DepuSDiaclitise++;
+        }
+        if (diaclitise.contains(carrMot.get(0)) && diaclitise.contains(carrMot.get(1))) {
+            DepuSDiaclitise++;
+        }
+        if (diaclitise.contains(carrMot.get(carrMot.size() - 1))) {
+            LastDiaclitise++;
+        }
+        if (diaclitise.contains(carrMot.get(carrMot.size() - 1)) && diaclitise.contains(carrMot.get(carrMot.size() - 2))) {
+            LastDiaclitise++;
+        }
+        for (int i = DepuSDiaclitise; i < carrMot.size() - LastDiaclitise; i++) {
+            Res = Res.concat(carrMot.get(i) + "");
+        }
+        return Res;
+    }
+
+    public static List<String> lireStoprWord() {
+        List<String> resList = new ArrayList();
+        try {
+            File myObj = new File("src\\java\\Ressource\\stop-words.txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                resList.add(data);
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+        return resList;
     }
 
 }
